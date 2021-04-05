@@ -1,0 +1,9 @@
+baseURL = "https://didida.top/"
+languageCode = "en-us"
+title = "滴滴嗒的笔记"
+theme = "learn"
+
+pluralizeListTitles = false
+
+author = "Augustu Scofield"
+copyright = "© Augustu Scofield 2021"
