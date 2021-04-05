@@ -7,3 +7,6 @@ pluralizeListTitles = false
 
 author = "Augustu Scofield"
 copyright = "© Augustu Scofield 2021"
+
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
