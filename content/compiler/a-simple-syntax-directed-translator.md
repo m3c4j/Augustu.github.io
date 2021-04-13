@@ -1,7 +1,7 @@
 ---
 title: "简单的语法制导翻译"
 date: 2021-04-11T17:46:16+08:00
-draft: true
+draft: false
 
 ---
 
