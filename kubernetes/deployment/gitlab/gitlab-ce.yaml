@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  namespace: gitlab
+  name: gitlab-ce-nodatabase
+  labels:
+    name: gitlab-ce-nodatabase
+spec:
+  containers:
+  - name: gitlab-ce-nodatabase
+    image: gitlab/gitlab-ce
+    resources:
+      limits:
+        memory: "2048Mi"
+        cpu: "4000m"
+    ports:
+      - containerPort: 80

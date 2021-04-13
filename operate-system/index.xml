@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Operate System on 滴滴嗒的笔记</title><link>https://www.didida.top/operate-system/</link><description>Recent content in Operate System on 滴滴嗒的笔记</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>© Augustu Scofield 2021</copyright><lastBuildDate>Tue, 13 Apr 2021 21:28:52 +0800</lastBuildDate><atom:link href="https://www.didida.top/operate-system/index.xml" rel="self" type="application/rss+xml"/><item><title>Introduction</title><link>https://www.didida.top/operate-system/introduction/</link><pubDate>Tue, 13 Apr 2021 21:29:50 +0800</pubDate><guid>https://www.didida.top/operate-system/introduction/</guid><description>操作系统的主要功能 从资源管理器的观点来看，操作系统的任务是高效地管理整个系统的各个部分； 从扩展机的观点来看，其任务是为用户提供一台比物理计算机更易于使用的虚拟计算机； 系统调用 与进程有关，与文件系统有关
+与进程的创建和终止有关 处理信号 针对文件读写 进行目录管理 对信息进行保护 用于时间管理 操作系统结构 整体结构
+整个操作系统是一组函数的集合，其中每个函数在需要的时候可以去调用任何其他的函数
+分层结构
+把整个操作系统组织成一个层次结构，每一层软件都是在它的下层软件的基础上构造起来的
+虚拟机
+外核
+外核程序管理资源分配
+客户-服务器模型
+消息请求回复
+操作系统 进程管理 I/O设备管理 存储管理 文件管理 进程 通信
+调度
+时钟中断 非抢占式调度算法 抢占式调度算法
+所有系统
+公平 策略强制执行 平衡
+批处理系统
+吞吐量 周转时间 CPU利用率
+非抢占式调度算法 先到先服务 最短作业优先 抢占式调度算法 最短剩余时间优先 三级调度 准入调度器 内存调度器 CPU调度器 交互式系统</description></item></channel></rss>

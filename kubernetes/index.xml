@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kubernetes on 滴滴嗒的笔记</title><link>https://www.didida.top/kubernetes/</link><description>Recent content in Kubernetes on 滴滴嗒的笔记</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>© Augustu Scofield 2021</copyright><lastBuildDate>Tue, 13 Apr 2021 21:33:04 +0800</lastBuildDate><atom:link href="https://www.didida.top/kubernetes/index.xml" rel="self" type="application/rss+xml"/><item><title>Introduction</title><link>https://www.didida.top/kubernetes/introduction/</link><pubDate>Tue, 13 Apr 2021 21:34:34 +0800</pubDate><guid>https://www.didida.top/kubernetes/introduction/</guid><description>Kubernetes 服务发现和负载均衡 存储编排 自动部署和回滚 自动完成装箱计算 自我修复 密钥与配置管理 Kubernetes 组件 控制平面组件（Control Plane Components）
+kube-apiserver
+etcd
+kube-scheduler
+kube-controller-manager
+从逻辑上讲，每个控制器都是一个单独的进程， 但是为了降低复杂性，它们都被编译到同一个可执行文件，并在一个进程中运行。
+节点控制器（Node Controller）
+负责在节点出现故障时进行通知和响应。
+副本控制器（Replication Controller）
+负责为系统中的每个副本控制器对象维护正确数量的 Pod。
+端点控制器（Endpoints Controller）
+填充端点(Endpoints)对象(即加入 Service 与 Pod)。
+服务帐户和令牌控制器（Service Account &amp;amp; Token Controllers）
+为新的命名空间创建默认帐户和 API 访问令牌。
+cloud-controller-manager
+节点控制器（Node Controller）
+用于在节点终止响应后检查云提供商以确定节点是否已被删除。
+路由控制器（Route Controller）</description></item></channel></rss>
