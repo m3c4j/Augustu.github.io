@@ -30,16 +30,21 @@ sudo kubeadm init \
 
 
 sudo kubeadm init \
-	--kubernetes-version=v1.20.2 \
+	--kubernetes-version=v1.20.5 \
 	--image-repository registry.aliyuncs.com/google_containers \
 	--ignore-preflight-errors=all \
-	--apiserver-advertise-address=192.168.0.103 \
+	--apiserver-advertise-address=192.168.0.10 \
 	--pod-network-cidr=10.10.0.0/16 \
 	--v=5
 
 sudo systemctl enable --now kubelet
 
+# /run/flannel empty, just wait to finish
 kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
+
+# single node
+kubectl taint nodes --all node-role.kubernetes.io/master-
+
 ```
 
 ref: https://kubernetes.io/zh/docs/setup/production-environment/tools/kubeadm/install-kubeadm/

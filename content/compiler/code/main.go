@@ -11,10 +11,11 @@ func main() {
 	// err := p.expr()
 	// fmt.Println(err)
 
-	test := "a + 12"
+	test := "a + 12 = true"
 
 	l := NewLexer(test)
 	for t, fin := l.scan(); !fin; t, fin = l.scan() {
 		fmt.Println(t.String())
+		fmt.Printf("%#v\n", t)
 	}
 }
