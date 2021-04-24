@@ -1,0 +1,31 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: app-monitor-elastic-master
+  labels:
+    type: local
+    volume: app-monitor-volume
+spec:
+  storageClassName: local
+  capacity:
+    storage: 5Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/home/augustu/Mount/Develop/data/kubernetes/app-monitor-elastic-master"
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: app-monitor-elastic-data
+  labels:
+    type: local
+    volume: app-monitor-volume
+spec:
+  storageClassName: local
+  capacity:
+    storage: 5Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/home/augustu/Mount/Develop/data/kubernetes/app-monitor-elastic-data"
