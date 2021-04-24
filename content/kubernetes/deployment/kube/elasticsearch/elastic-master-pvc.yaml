@@ -1,0 +1,52 @@
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: data-elasticsearch-v15-master-0
+  namespace: app-monitor
+  uid: 1990c7a4-1f73-4916-b8ae-604a0cc5b394
+  resourceVersion: '54676'
+  creationTimestamp: '2021-04-24T08:57:12Z'
+  labels:
+    app.kubernetes.io/component: master
+    app.kubernetes.io/instance: elasticsearch-v15
+    app.kubernetes.io/name: elasticsearch
+  finalizers:
+    - kubernetes.io/pvc-protection
+  managedFields:
+    - manager: kube-controller-manager
+      operation: Update
+      apiVersion: v1
+      time: '2021-04-24T08:57:12Z'
+      fieldsType: FieldsV1
+      fieldsV1:
+        'f:metadata':
+          'f:labels':
+            .: {}
+            'f:app.kubernetes.io/component': {}
+            'f:app.kubernetes.io/instance': {}
+            'f:app.kubernetes.io/name': {}
+        'f:spec':
+          'f:accessModes': {}
+          'f:resources':
+            'f:requests':
+              .: {}
+              'f:storage': {}
+          'f:selector': {}
+          'f:volumeMode': {}
+        'f:status':
+          'f:phase': {}
+  selfLink: >-
+    /api/v1/namespaces/app-monitor/persistentvolumeclaims/data-elasticsearch-v15-master-0
+spec:
+  accessModes:
+    - ReadWriteOnce
+  selector:
+    matchLabels:
+      volume: app-monitor-volume
+  resources:
+    requests:
+      storage: 5Gi
+  storageClassName: local
+  volumeMode: Filesystem
+status:
+  phase: Pending
