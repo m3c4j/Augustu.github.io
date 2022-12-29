@@ -1,6 +1,6 @@
 baseURL = "https://www.didida.top/"
 languageCode = "en-us"
-title = "滴滴嗒的笔记"
+title = "滴滴哒的技术分享"
 theme = "learn"
 
 pluralizeListTitles = false
